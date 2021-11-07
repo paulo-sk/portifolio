@@ -292,8 +292,13 @@ section{
 }
 
 .about .row .box:nth-child(1) .progress:nth-child(6) .bar span{
+    width: 50%;
+}
+
+.about .row .box:nth-child(1) .progress:nth-child(7) .bar span{
     width: 20%;
 }
+
 
 
 .about .row .box .exp-box{
