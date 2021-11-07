@@ -397,6 +397,7 @@ section{
 
 .portfolio .image-container .box:hover .info{
     transform: scale(1);
+    text-align: center;
 }
 
 .portfolio .image-container .box .info h3{
@@ -623,6 +624,17 @@ section{
         width: 100%;
     }
 
+    .home .content{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social{
+        justify-content: center;
+        font-size: 5rem;
+    }
+
 }
 
 @media (max-width:400px){
@@ -646,5 +658,6 @@ section{
     .contact .row form .inputBox input{
         width:100%;
     }
+
 
 }
