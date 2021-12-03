@@ -51,7 +51,11 @@ body.dark-theme{
     --primary-text-color:#fff;
     --secondary-text-color:#eee;
 }
-
+body.dark-theme .aboutme{
+   background-color: #fff;
+   color: #171C32;
+   border: 5px solid rgb(36, 216, 223);
+}
 section{
     /* min-height: 100vh; */
     padding: 1rem;
@@ -103,6 +107,10 @@ section{
     margin-left: .5em;
     margin-top: 1em;
     font-size: 2rem;
+    color: var(--main-color);
+}
+
+.social a:visited{
     color: var(--main-color);
 }
 
@@ -221,8 +229,32 @@ section{
     font-size: 2rem;
 }
 
+/* sobremim */
+.aboutme{
+    display: inline-block;
+    margin: 0 3rem;
+    padding: 3rem 6%;
+    text-align: center;
+    border: 5px solid rgb(15, 191, 235);
+    border-radius: 5px;
+    background-color: rgb(37, 36, 36);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.aboutme h1{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.aboutme ul {
+    text-align: left;
+    list-style-position: inside;
+}
 .about {
     margin-top: 10em;
+    
 }
 
 .about .row{
@@ -412,60 +444,6 @@ section{
     flex-wrap: wrap;
 }
 
-.blog .box-container .box{
-    width:33rem;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    margin:1.5rem;
-    background: var(--primary-bg-color);
-    overflow: hidden;
-}
-
-.blog .box-container .box img{
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-}
-
-.blog .box-container .box .content{
-    padding:1.5rem;
-}
-
-.blog .box-container .box .content .info{
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    text-align: center;
-    position: relative;
-    font-size: 1.5rem;
-    color:var(--primary-text-color);
-    background:var(--secondary-bg-color);
-    padding:1rem;
-    margin-top: -4rem;
-    margin-bottom: 1rem;
-}
-
-.blog .box-container .box .content .info i{
-    color:var(--main-color);
-    padding:0 1rem;
-}
-
-.blog .box-container .box .content .title{
-    color:var(--primary-text-color);
-    display: block;
-    font-size: 2.5rem;
-    padding:.5rem 0;
-}
-
-.blog .box-container .box .content .title:hover{
-    text-decoration: underline;
-    color:var(--main-color);
-}
-
-.blog .box-container .box .content p{
-    color:var(--secondary-text-color);
-    padding:.5rem 0;
-    font-size: 1.5rem;
-}
 
 .contact .row{
     display: flex;
@@ -599,7 +577,6 @@ section{
 #theme-toggler.fa-sun{
     transform:rotate(-180deg);
 }
-
 
 
 /* media queries  */
