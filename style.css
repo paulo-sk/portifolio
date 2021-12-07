@@ -52,9 +52,9 @@ body.dark-theme{
     --secondary-text-color:#eee;
 }
 body.dark-theme .aboutme{
-   background-color: #fff;
-   color: #171C32;
-   border: 5px solid rgb(36, 216, 223);
+   background-color:#2a2e3b;
+   color: #fff;
+   border: 2px solid #ffff;
 }
 section{
     /* min-height: 100vh; */
@@ -111,6 +111,7 @@ section{
 }
 
 .social a:visited{
+    text-decoration: none;
     color: var(--main-color);
 }
 
@@ -235,10 +236,10 @@ section{
     margin: 0 3rem;
     padding: 3rem 6%;
     text-align: center;
-    border: 5px solid rgb(15, 191, 235);
+    border: 2px solid rgb(17, 18, 19);
     border-radius: 5px;
-    background-color: rgb(37, 36, 36);
-    color: #fff;
+    background-color: rgb(219, 219, 219);
+    color: rgb(37, 36, 36);
     font-size: 2rem;
     line-height: 4rem;
 }
@@ -437,13 +438,6 @@ section{
     color:var(--primary-text-color);
 }
 
-.blog .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 
 .contact .row{
     display: flex;
@@ -513,6 +507,16 @@ section{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.contact .box-container a{
+    text-decoration: none;
+    background-color: rgb(25, 247, 247);
+    color: black;
+    padding: 1px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 2em;
 }
 
 .contact .box-container .box{
