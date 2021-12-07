@@ -44,6 +44,7 @@ body{
     background:var(--secondary-bg-color);
 }
 
+/* ================================== DARK THEME =============================== */
 body.dark-theme{
     --main-color:#88858d;
     --primary-bg-color:#252C48;
@@ -56,6 +57,13 @@ body.dark-theme .aboutme{
    color: #fff;
    border: 2px solid #ffff;
 }
+
+body.dark-theme .contact .box-container a{
+    background-color: rgb(25, 247, 247);
+    color: black;
+}
+
+
 section{
     /* min-height: 100vh; */
     padding: 1rem;
@@ -232,13 +240,18 @@ section{
 
 /* sobremim */
 .aboutme{
-    display: inline-block;
-    margin: 0 3rem;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     padding: 3rem 6%;
     text-align: center;
     border: 2px solid rgb(17, 18, 19);
     border-radius: 5px;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
     color: rgb(37, 36, 36);
     font-size: 2rem;
     line-height: 4rem;
@@ -247,6 +260,11 @@ section{
 .aboutme h1{
     font-size: 3rem;
     margin: 1rem 0;
+
+}
+
+.aboutme .gray{
+    color: grey;
 }
 
 .aboutme ul {
@@ -511,7 +529,7 @@ section{
 
 .contact .box-container a{
     text-decoration: none;
-    background-color: rgb(25, 247, 247);
+    background-color: rgb(236, 240, 240);
     color: black;
     padding: 1px 10px;
     border-radius: 5px;
@@ -596,6 +614,10 @@ section{
         padding: 0 3%;
     }
 
+    .aboutme{
+        width: 96%;
+    }
+
 }
 
 @media (max-width:768px){
@@ -617,6 +639,9 @@ section{
         font-size: 5rem;
     }
 
+    .aboutme{
+        width: 96%;
+    }
 }
 
 @media (max-width:400px){
@@ -627,6 +652,10 @@ section{
 
     .services .box-container .box{
         width: 100%;
+    }
+
+    .aboutme{
+        width: 96%;
     }
 
     .portfolio .image-container .box{
